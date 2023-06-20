@@ -5,11 +5,10 @@ export default function Layout(props) {
   return (
     <div>
       <Navbar />
-      {/* <div className="flex"> */}
-      {/* <SideBar /> */}
-
-      {props.children}
-      {/* </div> */}
+      <div className="flex">
+        <SideBar />
+        {props.children}
+      </div>
     </div>
   );
 }

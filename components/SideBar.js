@@ -1,35 +1,24 @@
-import Button from './Button';
-import { useState } from 'react';
+import Button from '@/components/Button';
+import Link from 'next/link';
 
-const function1 = () => {
-  console.log('Button clicked!');
-};
-
-// const function1 = () => {
-//   return 'List of device from house 1';
-// };
-
-const function2 = () => {
-  console.log('Button clicked!');
-};
-
-const sidebarButtons = [
-  { id: 'H1', onClick: function1 },
-  { id: 'H2', onClick: function2 },
-];
-
-export default function SideBar() {
-  // const [homeIndex, setHomeIndex] = useState('');
+export default function HomeIndex() {
   return (
-    <div className="bg-primary-200 min-h-screen w-60 flex flex-col">
-      <div className="px-3 pt-3 pb-2 space-y-2 ">
-        {sidebarButtons.map((buttonData, index) => (
-          <Button
-            key={index}
-            title={buttonData.id}
-            onClick={buttonData.onClick}
-          />
-        ))}
+    <div className="flex">
+      {/* <SideBar /> */}
+      <div className="bg-primary-200 min-h-screen w-60 flex flex-col">
+        <div className="px-3 pt-3 pb-2 space-y-2 ">
+          <Link
+            href="/home1"
+            className="text-primary-400 hover:text-primary-600 font-medium">
+            Home 1
+          </Link>
+          <br />
+          <Link
+            href="/home2"
+            className="text-primary-400 hover:text-primary-600 font-medium">
+            Home 2
+          </Link>
+        </div>
       </div>
     </div>
   );
