@@ -1,4 +1,4 @@
-import Button from '@/components/Button';
+// import Button from '@/components/Button';
 import Link from 'next/link';
 
 const SidebarLinks = ['Sunimplant', 'Tdart', 'Neopetra'];
@@ -17,17 +17,6 @@ export default function SideBar() {
               {linkData}
             </Link>
           ))}
-          {/* <Link
-            href="/home1"
-            className="text-primary-400 hover:text-primary-600 font-medium">
-            Home 1
-          </Link>
-          <br />
-          <Link
-            href="/home2"
-            className="text-primary-400 hover:text-primary-600 font-medium">
-            Home 2
-          </Link> */}
         </div>
       </div>
     </div>
