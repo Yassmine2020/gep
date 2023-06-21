@@ -2,6 +2,6 @@ import { useRouter } from 'next/router';
 
 export default function homesPage() {
   const router = useRouter();
-  const homeId = router.query.homeId;
-  return <div>hey {homeId}</div>;
+  const homeName = router.query.homeName;
+  return <div>hey {homeName}</div>;
 }

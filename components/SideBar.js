@@ -1,13 +1,9 @@
 import Button from '@/components/Button';
 import Link from 'next/link';
 
-const SidebarLinks = [
-  { text: 'Home1', href: '/home1' },
-  { text: 'Home2', href: '/home2' },
-];
+const SidebarLinks = ['Sunimplant', 'Tdart', 'Neopetra'];
 
 export default function SideBar() {
-
   return (
     <div className="flex">
       {/* <SideBar /> */}
@@ -16,9 +12,9 @@ export default function SideBar() {
           {SidebarLinks.map((linkData, index) => (
             <Link
               key={index}
-              href={linkData.href}
+              href={`${linkData}`}
               className="bg-primary-500 grid place-content-center text-xl hover:hover:bg-primary-600 text-white font-bold w-52 h-16 py-2 px-4 rounded-md ">
-              {linkData.text}
+              {linkData}
             </Link>
           ))}
           {/* <Link
