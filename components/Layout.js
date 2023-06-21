@@ -7,7 +7,9 @@ export default function Layout(props) {
       <Navbar />
       <div className="flex">
         <SideBar />
-        {props.children}
+        <div className="bg-slate-50 w-screen grid place-content-center">
+          {props.children}
+        </div>
       </div>
     </div>
   );
