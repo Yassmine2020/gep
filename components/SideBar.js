@@ -1,7 +1,7 @@
 // import Button from '@/components/Button';
 import Link from 'next/link';
 
-const SidebarLinks = ['Sunimplant', 'Tdart', 'Neopetra'];
+const SidebarLinks = ['sunimplant', 'tdart', 'neopetra'];
 
 export default function SideBar() {
   return (

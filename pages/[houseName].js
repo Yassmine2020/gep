@@ -1,10 +1,15 @@
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-export default function HomePage() {
+export default function homesPage() {
+  const router = useRouter();
+  const houseName = router.query.houseName;
+  console.log(houseName);
   const [houseData, setHouseData] = useState(null);
 
   useEffect(() => {
-    fetch('/api/fetchHouseDevices?houseName=sunimplant')
+    // fetch('/api/fetchHouseDevices?houseName=houseName')
+    fetch(`/api/fetchHouseDevices?houseName=${houseName}`)
       // fetch('/api/fetchHouseDevices')
       .then((response) => response.json())
       .then((houseData) => {
@@ -13,7 +18,7 @@ export default function HomePage() {
       .catch((error) => {
         console.error(error);
       });
-  }, []);
+  }, [houseName]);
 
   return (
     <div>
