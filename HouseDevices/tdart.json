@@ -1,0 +1,14 @@
+{
+  "data": [
+    { "device_id": "PV_ANALYZER" },
+    { "device_id": "DC_ANALYZER" },
+    { "device_id": "LOAD_ANALYZER" },
+    { "device_id": "GRID_ANALYZER" },
+    { "device_id": "HOME1_TEMP_H" },
+    { "device_id": "HOME2_TEMP" },
+    { "device_id": "HOME1_LIGHT" },
+    { "device_id": "HOME2_LIGHT" }
+  ],
+  "message": "Ok",
+  "success": true
+}
