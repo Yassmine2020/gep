@@ -32,7 +32,7 @@ export default function EditModal({ isOpen, onClose, onUpdateDeviceID }) {
             <button
               type="button"
               onClick={onClose}
-              className="mr-2 px-4 py-2 border border-gray-300 rounded">
+              className="mr-2 px-4 py-2 font-bold border border-gray-300 rounded">
               Cancel
             </button>
             <Button

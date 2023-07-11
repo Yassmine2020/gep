@@ -1,9 +1,20 @@
+import Image from 'next/image';
+
 export default function Navbar() {
   return (
-    // <div className="bg-slate-50 min-h-screen flex flex-col">
-    <div className="bg-primary-600 min-w-screen h-16 px-10 pt-3 pb-2 text-white">
-      <div className="text-2xl">Green Energy Park</div>
-      {/* </div> */}
+    <div className="bg-gray-100 shadow w-full px-10 py-1 text-white flex justify-end items-center space-x-4">
+      <Image
+        src="/logo_um6p.png"
+        alt="Picture of the author"
+        width={90}
+        height={60}
+      />
+      <Image
+        src="/logo_iresen.svg"
+        alt="Picture of the author"
+        width={140}
+        height={60}
+      />
     </div>
   );
 }
