@@ -28,7 +28,6 @@ export default function HousePage() {
         });
     }
   }, [houseName]);
-
   // Get the data
 
   // Delete the data
@@ -78,15 +77,18 @@ export default function HousePage() {
       );
 
       if (response.ok) {
-        console.log(`Device id updated to: ${newDeviceID}`);
+        alert(`Device id updated to: ${newDeviceID}`);
+        // console.log(`Device id updated to: ${newDeviceID}`);
         // setDeviceID(newDeviceID);
         setIsModalOpen(false);
         setShouldReload(true);
       } else {
-        console.log('Failed to update device name');
+        alert('Failed to update device name');
+        // console.log('Failed to update device name');
       }
     } catch (error) {
-      console.log('Error:', error);
+      alert('Error:', error);
+      // console.log('Error:', error);
     }
   };
   // Update the data
