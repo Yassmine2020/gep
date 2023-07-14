@@ -3,7 +3,6 @@ const apiToken = process.env.API_TOKEN;
 
 export default async function fetchHouseDevices(req, res) {
   const houseName = req.query.houseName;
-  // const houseName = new URLSearchParams(req.url).get('houseName');
 
   let config = {
     method: 'get',

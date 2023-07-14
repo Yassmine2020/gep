@@ -18,7 +18,7 @@ export default function HousePage() {
   // Get the data
   useEffect(() => {
     if (houseName) {
-      fetch(`/api/fetchHouseDevices?houseName=${houseName}`)
+      fetch(`/api/getHouseDevices?houseName=${houseName}`)
         .then((response) => response.json())
         .then((houseData) => {
           setHouseData(houseData);

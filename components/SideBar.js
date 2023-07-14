@@ -1,4 +1,3 @@
-// import Button from '@/components/Button';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -7,7 +6,6 @@ const SidebarLinks = ['sunimplant', 'tdart', 'neopetra'];
 export default function SideBar() {
   return (
     <div className="flex">
-      {/* <SideBar /> */}
       <div className="bg-gray-800 min-h-screen w-60 flex flex-col">
         <div className="flex py-4 px-6 items-center">
           <Image
