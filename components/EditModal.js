@@ -15,7 +15,7 @@ export default function EditModal({ isOpen, onClose, onUpdateDeviceID }) {
 
   return (
     <div
-      className={`fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 ${
+      className={`fixed inset-0 flex items-center justify-center  bg-gray-900 bg-opacity-50 ${
         isOpen ? '' : 'hidden'
       }`}>
       <div className="modal bg-white rounded p-8">

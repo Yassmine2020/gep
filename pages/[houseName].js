@@ -9,13 +9,13 @@ export default function HousePage() {
   const router = useRouter();
   const houseName = router.query.houseName;
   const [houseData, setHouseData] = useState(null);
-  const [message, setMessage] = useState('');
+  // const [message, setMessage] = useState('');
   const [editdeviceID, setEditdeviceID] = useState(null);
-  const [deviceID, setDeviceID] = useState('');
+  // const [deviceID, setDeviceID] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [shouldReload, setShouldReload] = useState(false);
 
-  // get the data
+  // Get the data
   useEffect(() => {
     if (houseName) {
       fetch(`/api/fetchHouseDevices?houseName=${houseName}`)
@@ -43,11 +43,13 @@ export default function HousePage() {
 
       if (response.ok) {
         const data = await response.json();
-        setMessage(data.message);
+        // setMessage(data.message);
         console.log(data.message);
+        alert(data.message);
         setShouldReload(true);
       } else {
         setMessage('Failed to delete the device');
+        alert(message);
       }
     } catch (error) {
       setMessage('Error: ' + error.message);
@@ -56,10 +58,6 @@ export default function HousePage() {
   // Delete the data
 
   // Update the data
-  const handleInputChange = (event) => {
-    setDeviceID(event.target.value);
-  };
-
   const handleEditClick = (deviceID) => {
     setEditdeviceID(deviceID);
     setIsModalOpen(true);
@@ -81,7 +79,7 @@ export default function HousePage() {
 
       if (response.ok) {
         console.log(`Device id updated to: ${newDeviceID}`);
-        setDeviceID(newDeviceID);
+        // setDeviceID(newDeviceID);
         setIsModalOpen(false);
         setShouldReload(true);
       } else {
@@ -99,17 +97,8 @@ export default function HousePage() {
       setShouldReload(false); // Reset shouldReload back to false after reloading
     }
   }, [shouldReload]);
-  const houseDataTest = { data: [{ device_id: 'houseID' }] };
 
   return (
-    // <div>
-    //   {houseData ? (
-    //     <div>{JSON.stringify(houseData.data)}</div>
-    //   ) : (
-    //     <div>ERROR while fetching the data</div>
-    //   )}
-    // </div>
-
     <div className="w-full px-10 py-10 capitalize">
       <div className="w-full pb-4 flex justify-end items-center">
         <Button title="addDevice" className="" />

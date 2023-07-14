@@ -1,4 +1,5 @@
 const axios = require('axios');
+const apiToken = process.env.API_TOKEN;
 
 export default async function fetchHouseDevices(req, res) {
   const houseName = req.query.houseName;
@@ -12,8 +13,7 @@ export default async function fetchHouseDevices(req, res) {
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
-      Authorization:
-        'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZ3NicCIsInJvbGUiOiJlZGl0b3IiLCJleHAiOjE2ODk1OTAwMjR9.psxi7GL9dYutzuR9wCz8zs9wpUF1yakrNgsokSWnAiQ',
+      Authorization: apiToken,
     },
   };
 
