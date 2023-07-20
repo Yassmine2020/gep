@@ -18,7 +18,7 @@ Le Green & Smart Building Park (GSBP) est une plateforme de recherche et d'innov
 - Ouvrez votre navigateur et accédez à http://localhost:3000 pour voir le tableau de bord.
   
 ### Captures d'écran
-![Capture](https://github.com/Yassmine2020/gep/assets/85367800/964195ae-cc52-4519-8226-4ce38f3a4a48)
+![CaptureSite](https://github.com/Yassmine2020/gep/assets/85367800/83b54ec7-b6b3-4669-85e6-7ec466e7c062)
 
 ### NB
 Veuillez noter que les données associées à chaque maison des prototypes de bâtiments verts et intelligents ne peuvent pas être récupérées depuis l'extérieur de l'entreprise Green & Smart Building Platform (GSBP) pour des raisons de confidentialité et de sécurité. Ce tableau de bord est destiné à un usage interne au sein de l'entreprise et n'est pas accessible publiquement. Seuls les employés autorisés ayant accès à l'environnement de travail de l'entreprise peuvent consulter et gérer les données des dispositifs. Nous vous remercions de votre compréhension.
