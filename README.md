@@ -1,4 +1,4 @@
-## Responsive Dashboard to Manage the Devices of Green & Smart Building Prototypes
+## Interface de gestion de capteurs du campus solaire
 Ce projet est un tableau de bord réactif qui permet de gérer les dispositifs utilisés dans les prototypes de bâtiments verts et intelligents du Green & Smart Building Park (GSBP).
 
 ### Présentation du Projet
